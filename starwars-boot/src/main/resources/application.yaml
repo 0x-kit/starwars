@@ -1,0 +1,15 @@
+logging:
+  level:
+    root: ERROR
+    org.springframework: INFO
+    org.springframework.data: ERROR
+    org.example.infrastructure: DEBUG
+swapi:
+  user-agent: "Mozilla/5.0 (X11; Fedora; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36"
+  url: "http://swapi.trileuco.com:1138/api"
+  endpoints:
+    people: "/people"
+    starships: "/starships"
+    vehicles: "/vehicles"
+    films: "/films"
+    planets: "/planets"
