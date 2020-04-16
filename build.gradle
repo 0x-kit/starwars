@@ -1,0 +1,35 @@
+// Parent build.grade: define basic configuration that is shared across all sub-modules
+plugins {
+    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+}
+
+allprojects {
+    group = 'org.example'
+    version = '0.0.1-SNAPSHOT'
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'io.spring.dependency-management'
+    apply plugin: 'java-library'
+
+    sourceCompatibility = '1.8'
+
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+
+    dependencyManagement {
+        imports {
+            mavenBom("org.springframework.boot:spring-boot-dependencies:2.2.6.RELEASE")
+        }
+    }
+
+    dependencies {
+        testCompile 'junit:junit:4.12'
+        testCompile 'org.mockito:mockito-core:2.7.22'
+        testCompile("org.assertj:assertj-core:3.11.1")
+    }
+
+}

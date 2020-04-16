@@ -1,0 +1,10 @@
+dependencies {
+    implementation project(':starwars-domain')
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    // MapStruct
+    compileOnly 'org.mapstruct:mapstruct-jdk8:1.2.0.Final'
+    annotationProcessor 'org.mapstruct:mapstruct-processor:1.2.0.Final'
+    // Lombok
+    compileOnly 'org.projectlombok:lombok:1.18.2'
+    annotationProcessor 'org.projectlombok:lombok:1.18.2'
+}

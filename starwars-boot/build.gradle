@@ -1,0 +1,11 @@
+plugins {
+    id "org.springframework.boot" version "2.2.6.RELEASE"
+}
+
+dependencies {
+    implementation project(':starwars-domain')
+    implementation project(':starwars-infrastructure')
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation('org.springframework.boot:spring-boot-starter-test')
+}

@@ -1,0 +1,5 @@
+rootProject.name = 'swapi-starwars-multimodule'
+include 'starwars-boot'
+include 'starwars-domain'
+include 'starwars-infrastructure'
+

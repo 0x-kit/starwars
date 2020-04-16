@@ -1,0 +1,54 @@
+ generic files to ignore
+*~
+.svn
+*.DS_Store
+*.swp
+*.out
+*.log
+*.log.*
+*.pmd*
+
+# java stuff
+*.class
+*.war
+*.ear
+bin
+target
+tmp
+temp
+.sass-cache
+security/lib/*
+.springBeans
+
+# eclipse stuff
+.project
+.classpath
+.settings
+.externalToolBuilders
+.factorypath
+
+# clover plugin
+**/.clover/**
+
+# IntelliJ IDEA
+/.idea/*/*
+.idea/*
+web/.idea/
+*.iml
+
+# Visual studio code
+.vscode/
+web/react-web/.vscode
+
+/target
+/out
+### idea ###
+/.idea
+/*.iml
+### Gradle ###
+.gradle
+/gradle
+gradlew
+gradlew.bat
+**/build/**
+

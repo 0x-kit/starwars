@@ -1,0 +1,6 @@
+dependencies {
+    implementation 'org.apache.commons:commons-lang3:3.6'
+    // Lombok
+    compileOnly 'org.projectlombok:lombok:1.18.2'
+    annotationProcessor 'org.projectlombok:lombok:1.18.2'
+}
