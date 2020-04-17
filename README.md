@@ -1,18 +1,3 @@
-
-## Quickstart
-
-###### About
-This project aims to develop a RESTFul API about Star Wars characters while applying principles of Domain Driven Design and Hexagonal Architecture. 
-It is written in java8 under spring-boot web framework and it just accepts requests only of this type: 
-       curl --request GET \
-          --url 'http://{host}:{port}/swapi-proxy/person-info?name=Luke%20Skywalker'
-    
-    
-###### Run the app
-    gradle bootRun
-    
-###### How to deploy this on a live system
-    gradle build
 ## Quickstart
 
 ###### About
